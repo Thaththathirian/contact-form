@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://your-demo-link.your-domain">
+    <a href="https://contact-form-nine-ashen.vercel.app/">
       Demo
     </a>
     <span> | </span>
@@ -37,6 +37,7 @@
 ### What I learned
 
 Working on this project, I applied my knowledge of **HTML, CSS, and responsive design** to build a well-structured and user-friendly contact form. Some key takeaways include:
+
 - Implementing **CSS Grid** for layout structuring.
 - Using **custom properties (CSS variables)** for better styling consistency.
 - Handling **form styling** effectively.
@@ -60,10 +61,10 @@ Working on this project, I applied my knowledge of **HTML, CSS, and responsive d
 
 ## Features
 
-- 📌 Fully responsive contact form  
-- 🎨 Styled with **CSS Grid & Flexbox**  
-- 🔍 Includes input focus and hover effects  
-- 📱 Mobile-friendly design  
+- 📌 Fully responsive contact form
+- 🎨 Styled with **CSS Grid & Flexbox**
+- 🔍 Includes input focus and hover effects
+- 📱 Mobile-friendly design
 
 ## Acknowledgements
 
@@ -71,5 +72,4 @@ A big thank you to **DevChallenges.io** for providing the challenge and inspirat
 
 ## Author
 
-- Website: [sampintn.com](https://sampintn.com)
 - GitHub: [@Thaththathirian](https://github.com/Thaththathirian)
