@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="./resources/Logo.svg" alt="Logo" />
+      </div>
+
+      <div class="header">
+        <h1>Interested in our business pricing?</h1>
+        <h2>
+          Fill out the form to view details and we'll contact you as soon as
+          possible.
+        </h2>
+      </div>
+
+      <form action="">
+        <div class="form-grid">
+          <div class="item">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" value="Ashok Shanmugam" />
+          </div>
+
+          <div class="item">
+            <label for="email">Company Email</label>
+            <input type="email" id="email" name="email" value="ashok@abc.com" />
+          </div>
+
+          <div class="item">
+            <label for="company-size">Company Size</label>
+            <div class="custom-select">
+              <select name="company-size" id="company-size">
+                <option value="1-10">1-10 employees</option>
+                <option value="11-50">11-50 employees</option>
+                <option value="50-100">50-100 employees</option>
+                <option value="100-200">100-200 employees</option>
+                <option value=">200">>200 employees</option>
+              </select>
+              <img src="./resources/Expand_down.svg" alt="Expand Arrow" />
+            </div>
+          </div>
+
+          <div class="item">
+            <label for="subject">Subject</label>
+            <div class="custom-select">
+              <select name="subject" id="subject">
+                <option value="landing-page">Building Landing Pages</option>
+                <option value="commercial-web-page">Commercial web page</option>
+                <option value="shopping-cart">Shopping cart</option>
+                <option value="portfolio">Portfolio</option>
+              </select>
+              <img src="./resources/Expand_down.svg" alt="Expand Arrow" />
+            </div>
+          </div>
+
+          <div class="message item">
+            <label for="message">Message</label>
+            <textarea name="message" id="message">50-100 employees</textarea>
+          </div>
+        </div>
+
+        <button>Contact Sales</button>
+      </form>
+    </div>
+  </body>
+</html>

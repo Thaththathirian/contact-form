@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --blue: #4036a9;
+  --black: #111729;
+  --gray: #cdd5e0;
+  --white: #ffffff;
+  --white-10: #ffffff33;
+  --red: #b4436d;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2rem;
+}
+label {
+  font-size: 0.875rem;
+  margin-bottom: 5px;
+  display: block;
+}
+h1,
+h2,
+label {
+  color: var(--white);
+}
+body {
+  background: url("./resources/background.svg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 16px;
+  margin-bottom: 40px;
+  transition: all 0.3s;
+}
+
+.logo {
+  position: relative;
+  top: 20px;
+  left: 70px;
+  margin-bottom: 60px;
+}
+.header {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+.header h2 {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+form {
+  background-color: var(--white-10);
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.message {
+  grid-column: span 2;
+  margin-bottom: 15px;
+}
+
+input,
+select,
+textarea,
+button {
+  padding: 20px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+textarea {
+  resize: none;
+  overflow-y: auto;
+  height: 200px;
+  font-family: inherit;
+}
+
+.custom-select {
+  position: relative;
+  display: flex;
+}
+
+.custom-select select {
+  appearance: none;
+  width: 100%;
+}
+
+.custom-select img {
+  position: absolute;
+  right: 15px;
+  pointer-events: none;
+  width: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+button {
+  display: block;
+  width: 100%;
+  font-size: 1.25rem;
+  color: var(--blue);
+}
+button:hover,
+input:focus,
+textarea:focus,
+select:focus {
+  box-shadow: 0 0 8px rgb(196, 195, 195);
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    transform: scale(0.95);
+  }
+  .logo {
+    top: 0;
+    left: 10px;
+    margin-bottom: 50px;
+  }
+  h1 {
+    font-size: 3.3rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  .header {
+    text-align: center;
+  }
+  .header h1 {
+    margin: auto;
+    max-width: 550px;
+  }
+  .header h2 {
+    margin: auto;
+    margin-top: 20px;
+    font-weight: normal;
+    margin-bottom: 50px;
+  }
+  form {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    transform: scale(0.95);
+  }
+  .logo {
+    top: 0;
+    left: 10px;
+    margin-bottom: 50px;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  label {
+    font-size: 0.875rem;
+  }
+  .header {
+    text-align: center;
+  }
+  .header h1 {
+    margin: auto;
+    max-width: 550px;
+  }
+  .header h2 {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    font-weight: normal;
+    margin-bottom: 50px;
+  }
+  form {
+    max-width: 95%;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .message {
+    grid-column: span 1;
+  }
+}
